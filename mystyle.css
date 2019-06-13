@@ -62,13 +62,19 @@ address {
 
 cite {font-style: italic; font-weight: bold;}
 
-figure {text-align: center; //background: #E4FFFF;
+figure.data {text-align: center; //background: #E4FFFF;
         width: 750px;
         //border: 15px solid green;
         padding: 30px;
         margin: 15px;
         }
-img{
+figure.models {text-align: center; //background: #E4FFFF;
+        width: 750px;
+        //border: 15px solid green;
+        padding: 30px;
+        margin: 15px;
+        }
+img.data{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 5px;
   margin: 10px;
