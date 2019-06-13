@@ -16,14 +16,21 @@
     <p>This dataset is made to address bin-picking problems and consists of scenes representing objects cluttered in pile. Each scene contains 20 instances of the same object class that are dropped in a confined space. Variable number of objects are visible in a scene because of occlusion. It is designed for the purpose of training pose estimation algorithms based on depth data.</p>
 
     <p> This dataset is generated using <a href = https://www.blender.org>Blender</a>. The surface on which the objects are dropped is flat but with some spherical obstacles present. This is done to encourage more random orientation of the collected objects without which the objects tend to collect in a highly imbalanced pose distribution. The intution behind this is the fact that objects with flat faces will preferably land on them. </p>
-    <p>The dataset contains depth images and an additional 2400 scenes with RGB-D images</p> 
+    <p>The dataset contains depth images and an additional 2400 scenes of brick model with RGB-D images</p> 
 
-    <figure>
-    <img src="images/0250.png" style='max-width:32%' alt="brick" /> 
-    <img src="images/0250_L.png" style='max-width:32%' alt="brick" /> 
+    <figure class='data'>
+    <img class='data' src="images/0250.png" style='max-width:32%' alt="brick" /> 
+    <img class='data' src="images/0250_L.png" style='max-width:32%' alt="brick" /> 
     <figcaption>Sample depth and RGB image from synthetic <em>brick</em> dataset.</figcaption>
     </figure>
        
+    <figure class='models'>
+    <img src="images/bricKnObs.png" style='max-width:25%' alt="brick" /> 
+    <img src="images/coffee.png" style='max-width:15%' alt="brick" /> 
+    <img src="images/tless.png" style='max-width:15%' alt="brick" /> 
+    <img src="images/brick.png" style='max-width:15%' alt="brick" /> 
+    <figcaption>(From left to right) Spherical obstacles places to encourage different poses other than the flat face. The coffee-cup, tless and brick models.</figcaption>
+    </figure>
     
     <h2>Dataset description</h2>
         
@@ -57,18 +64,18 @@ Cube.019 250 453 383 55 -46.252174 26.885469 -15.495949 1.887654 5508 398 350 10
     <pre class="info">ID  sID  cX  cY  D  TX  TY  TZ  &Psi;  Vis  bX  bY  bW  bH</pre>
     
     <p>where, centroid is the pixel coordinate of the centroid of the instance, depth is the actual depth in cm, trans is the translation of the camera with respect to the instance, yaw is the in-plane rotation angle, visibility is the count of the visible pixels for the instance and bbox are the pixel coordinates, width and height of the 2D bounding box for the instance.</p>
-    <h4>Camera parameters</h4>
-    Camera parameters are described within a text file of the following format:
-    <p class="code"><code>
-    width	960<br/>
-    height	540<br/>
-    fu	1050<br/>
-    fv	1050<br/>
-    cu	480<br/>
-    cv	270<br/>
-    clip_start	0.1<br/>
-    clip_end	100<br/>
-    </code></p>
+<h4>Camera parameters</h4>
+Camera parameters are described within a text file of the following format:
+<p class="code"><code>
+width	960<br/>
+height	540<br/>
+fu	1050<br/>
+fv	1050<br/>
+cu	480<br/>
+cv	270<br/>
+clip_start	0.1<br/>
+clip_end	100<br/>
+</code></p>
     
     <h2>Download</h2>
     
@@ -77,6 +84,7 @@ Cube.019 250 453 383 55 -46.252174 26.885469 -15.495949 1.887654 5508 398 350 10
 
     <h3>3D models</h3>
     <p>3D models of the <em>tless</em> objects used in this dataset are taken from the <a href="http://cmp.felk.cvut.cz/t-less/">T-LESS</a> dataset of T. Hodaň <i>et al.</i> The <em>coffee cup</em> model has been downloaded from this <a href="http://rkouskou.gitlab.io/research/6D_NBV.html"> dataset</a> by Doumanoglou <i>et al.</i> (Dataset-scenario 2). 
+
     <!--
     brick: thingiverse
     gear: a piece from a motor on Thingiverse? -->
