@@ -32,7 +32,7 @@ h1 {color: white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
 h2,h3{color: #003399;}
-h2{  text-shadow: 1px 1px 1px darkcyan}
+//h2{  text-shadow: 1px 1px 1px darkcyan}
 ul.navbar {
 	list-style-type: none;
     padding: 0;
@@ -75,7 +75,7 @@ figure.models {text-align: center; //background: #E4FFFF;
         margin: 15px;
         }
 img.data{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 5px;
   margin: 10px;
 }
