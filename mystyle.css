@@ -53,9 +53,12 @@ ul.navbar li {
   a:visited {
     color: purple }
 address {
+  color: #008080;
+  font-size: 12pt;
     margin-top: 1em;
     padding-top: 1em;
-    border-top: thin dotted }
+    border-top: thin dotted ;
+    }
 .center {text-align: center;}
 .right {text-align: right;}
 .code {font-size: 10pt;background-color: #DAF0F0;}
